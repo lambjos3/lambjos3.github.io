@@ -10,8 +10,15 @@ name: "Josh Lamb"
 tagline: "Data Science student at Michigan State University"
 
 about: |
-  I am a Senior at Michigan State University. I am not going into data science but 
-  I am going into Christian ministry instead._
+  about: |
+  I am a senior at Michigan State University. I have built a foundation in data science through courses in Python, 
+  SQL, and data analysis. Through my projects, I have worked with real datasets, created visualizations, and built simple 
+  pipelines to find patterns and insights. This work has helped me learn how to think clearly, solve problems, and 
+  communicate results in a simple way. After graduation, I plan to go into Christian ministry. I care about 
+  helping people grow in their faith, building strong community, and serving others with purpose. My time 
+  in college, including being involved with Salt Company, has shaped my desire to lead and invest in others.
+  I aim to use both my technical background and my faith to serve people well, stay organized, and make a positive 
+  impact in the communities I am part of._
 
 # Contact information — remove any fields you prefer not to share
 email: "lambjos3@msu.edu"
