@@ -5,13 +5,13 @@
 # Copy this file to create your own project entries.
 # ============================================================
 
-title: "Optimal Nap Spot Prediction Across Campus"
+title: "Predicting NCAA Tournament Success from Team Efficiency Metrics"
 
 short_summary: >
-  Built a model to identify the best nap locations on MSU's campus based
-  on sunlight exposure, foot traffic, grass quality, and proximity to
-  food smells. Findings have been peer-reviewed by three other dogs and
-  were described as "life-changing" and "very good."
+  Built a model to predict NCAA Tournament results using advanced team stats 
+  like offense, defense, shooting, turnovers, and pace. The model predicts if 
+  a team makes the tournament, their seed range, and how far they go. Includes 
+  clear charts and feature rankings.
 
 tech_stack:
   - Python
@@ -19,29 +19,32 @@ tech_stack:
   - pandas
   - matplotlib
   - Jupyter Notebooks
+  - Numpy
+  - Seaborn
 
 problem_statement: >
-  Finding a good nap spot is harder than it looks. Campus is large,
-  conditions change throughout the day, and the best patches of sun
-  move. A mascot operating on intuition alone wastes valuable resting
-  time — a problem that affects productivity, morale, and tail-wagging
-  rates across the entire campus community.
+  It is hard to predict NCAA Tournament results. Advanced stats give a better 
+  view of team strength, but it is not clear which ones matter most. This project 
+  finds which stats best predict who makes the tournament, their seed, and how 
+  they perform.
 
 approach: >
-  Collected location data across 47 candidate nap sites over a full
-  academic semester. Features included average daily sunlight (hours),
-  grass softness score (1–10, assessed manually), nearby food-cart
-  proximity, and pedestrian traffic by hour. Trained a gradient boosting
-  classifier to predict a site's "nap quality" rating and used SHAP
-  values to explain which features mattered most.
+  Collected and cleaned data from multiple seasons. Focused on team stats like 
+  offense, defense, shooting, turnovers, and pace. Explored the data to find 
+  patterns. Trained models like logistic regression, random forest, and XGBoost. 
+  I then ested them with cross-validation. This helped me so I could measure which 
+  stats had the most impact.
 
 results_impact: >
-  The model achieved 89% accuracy on held-out test sites. Sunlight
-  duration and grass softness were the top two predictive features,
-  while proximity to the student union food court provided a meaningful
-  but secondary boost. A ranked list of top-10 nap sites was distributed
-  to the campus dog community and has since been downloaded 847 times.
+  The results showed that team resume mattered most. Wins Above Bubble, BARTHAG, and 
+  total wins were the strongest predictors in every model. Offensive and defensive 
+  efficiency also helped explain success. Logistic Regression was easy to read but 
+  less accurate, while Random Forest and the Neural Network gave better overall results 
+  by handling more complex patterns. The data had more non-tournament teams, which hurt 
+  performance, especially for Logistic Regression. Overall, stronger resumes and solid 
+  efficiency stats led to the best predictions.
 
-repo_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor"
-notebook_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor/blob/main/analysis.ipynb"
+repo_url: "https://github.com/lambjos3/cmse492_project.git"
+notebook_url: "https://github.com/lambjos3/cmse492_project/blob/main/notebook/exploritory/Preliminary%20Analysis%20and%20Baseline.ipynb"
+full_report: https://github.com/lambjos3/cmse492_project/blob/main/results/Lamb_Joshua_CMSE492_Project.pdf
 image_path: "img/placeholder_project_1.png"
