@@ -123,7 +123,7 @@ impact in the communities I am part of.</em></p></div>
             View Notebook
           </a>
 
-          <a href="https://github.com/lambjos3/cmse492_project/blob/main/results/Lamb_Joshua_CMSE492_Project.pdf">
+          <a href="https://github.com/lambjos3/cmse492_project/blob/main/results/Lamb_Joshua_CMSE492_Project.pdf" target="_blank" rel="noopener" class="btn btn-notebook"></a>
             View Full Report
           </a>
           
@@ -144,10 +144,10 @@ impact in the communities I am part of.</em></p></div>
       </div>
 
       <div class="project-body">
-        <h3 class="project-title">Spartan Football Crowd Cheer Analysis</h3>
+        <h3 class="project-title">NFL Game Outcome Prediction Using Team Stats</h3>
 
         <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Analyzed audio and attendance data from Spartan Stadium to understand what game events drive the loudest crowd reactions. Results were used to help the athletics department optimize in-game entertainment and — personally — to determine the exact moments when I should run onto the field for maximum dramatic effect.
+        <p class="project-summary">Built models to predict NFL game winners and score margins using team performance data. Created rolling stats to track recent form and tested Logistic Regression and Random Forest to compare results.
 </p>
 
         <!-- Tech stack as pill badges -->
@@ -157,10 +157,12 @@ impact in the communities I am part of.</em></p></div>
           
           <span class="tech-badge">pandas</span>
           
-          <span class="tech-badge">seaborn</span>
+          <span class="tech-badge">scikit-learn</span>
           
-          <span class="tech-badge">Plotly</span>
+          <span class="tech-badge">matplotlib</span>
           
+          <span class="tech-badge">great_tables</span>
+
           <span class="tech-badge">Jupyter Notebooks</span>
           
         </div>
@@ -171,19 +173,19 @@ impact in the communities I am part of.</em></p></div>
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>Fan energy is contagious, but it is also unpredictable. The athletics department wanted to know which in-game events (touchdowns, turnovers, big defensive stops, walk-up music choices) produced the biggest crowd reactions — and whether the pattern differed by opponent, weather, or game time. As the mascot, I had strong professional interest in this question.
+            <p>NFL games are hard to predict because teams change over time and injuries affect results. This project tested if recent stats like offense, defense, and turnovers can predict game results.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Combined play-by-play game data with decibel readings from stadium microphones across three seasons (~36 home games). Engineered features for score differential, down-and-distance, quarter, temperature, and opponent rank. Produced interactive Plotly dashboards that let non-technical staff filter by season and event type to explore crowd response patterns on their own.
+            <p>Pulled NFL play data and grouped it by team and game. Built rolling stats from the last 10 games like EPA, success rate, points scored, and turnovers. Created matchup stats by subtracting away team numbers from home team numbers. Trained Logistic Regression and Random Forest models to predict winners and a regression model for score difference. Measured results using accuracy and ROC-AUC.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Results &amp; Impact</h4>
-            <p>Defensive turnovers produced the loudest average crowd response — louder even than touchdowns — especially when MSU was trailing. Walk-up music selections in the 3rd quarter showed a statistically significant effect on cheer volume for games decided by fewer than 10 points. The athletics team used these findings to redesign the third-quarter entertainment package for the following season. I was given extra treats for my contributions.
+            <p>Logistic Regression worked as well as or better than Random Forest in some cases. The simple features already explained most of the pattern. The models gave good predictions and showed what stats matter most. Some teams, like the Lions, were rated too high, showing that stats alone cannot capture all game factors.
 </p>
           </div>
         </details>
@@ -191,16 +193,16 @@ impact in the communities I am part of.</em></p></div>
         <!-- Links to the GitHub repo and notebook -->
         <div class="project-links">
           
-          <a href="https://github.com/lambjos3/cmse492_project.git" target="_blank" rel="noopener" class="btn btn-repo">
+          <a href="https://github.com/felipeaguilarch/CSE482.git" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
           
           
-          <a href="https://github.com/lambjos3/cmse492_project/blob/main/notebook/exploritory/Preliminary%20Analysis%20and%20Baseline.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+          <a href="https://github.com/felipeaguilarch/CSE482/blob/main/notebooks/NFL_models.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
             View Notebook
           </a>
 
-          <a href="https://github.com/lambjos3/cmse492_project/blob/main/results/Lamb_Joshua_CMSE492_Project.pdf">
+          <a href="https://github.com/felipeaguilarch/CSE482/blob/main/results/CSE482_Final_Report.pdf" target="_blank" rel="noopener" class="btn btn-notebook">
             View Full Report
           </a>
           
