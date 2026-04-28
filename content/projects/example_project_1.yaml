@@ -36,13 +36,7 @@ approach: >
   stats had the most impact.
 
 results_impact: >
-  The results showed that team resume mattered most. Wins Above Bubble, BARTHAG, and 
-  total wins were the strongest predictors in every model. Offensive and defensive 
-  efficiency also helped explain success. Logistic Regression was easy to read but 
-  less accurate, while Random Forest and the Neural Network gave better overall results 
-  by handling more complex patterns. The data had more non-tournament teams, which hurt 
-  performance, especially for Logistic Regression. Overall, stronger resumes and solid 
-  efficiency stats led to the best predictions.
+  The results showed that team resume mattered most. Wins Above Bubble, BARTHAG, and total wins were the strongest predictors in every model. Offensive and defensive efficiency also helped explain success. Logistic Regression was easy to read but less accurate, while Random Forest and the Neural Network gave better overall results by handling more complex patterns. The data had more non-tournament teams, which hurt performance, especially for Logistic Regression. Overall, stronger resumes and solid efficiency stats led to the best predictions.
 
 repo_url: "https://github.com/lambjos3/cmse492_project.git"
 notebook_url: "https://github.com/lambjos3/cmse492_project/blob/main/notebook/exploritory/Preliminary%20Analysis%20and%20Baseline.ipynb"

@@ -210,6 +210,85 @@ impact in the communities I am part of.</em></p></div>
       </div>
 
     </article>
+
+
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/project_3.png"
+          alt="Thumbnail for Optimal Nap Spot Prediction Across Campus"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">NYC 311 Resolution Time Prediction (AWS SageMaker)</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Built a machine learning pipeline on AWS to predict how long NYC 311 complaints take to close. Used S3, Athena, and SageMaker to turn raw data into a clean dataset and train a model.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">scikit-learn</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">SQL</span>
+          
+          <span class="tech-badge">Jupyter Notebooks</span>
+
+          <span class="tech-badge">AWS S3</span>
+
+          <span class="tech-badge">AWS Athena</span>
+
+          <span class="tech-badge">AWS SageMaker</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>NYC 311 requests take different amounts of time to resolve based on agency, location, and complaint type. The goal was to predict how many days a request will take to close right when it is filed.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Pulled data from AWS Athena and stored it in S3. Cleaned the data and fixed missing values. Converted text fields like agency, borough, and complaint type into numbers. Added time features like day, hour, and same-day volume. Created the target: days to close. Formatted the data for SageMaker and trained a Linear Learner model.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>The model found clear patterns from time, location, and workload. Simple linear modeling worked well with clean data. The project showed that AWS tools and good data prep can produce solid predictions with a simple model.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/lambjos3/aws-nyc311-lambjos3.git" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          <a href="https://github.com/lambjos3/aws-nyc311-lambjos3/tree/main/notebooks" target="_blank" rel="noopener" class="btn btn-notebook">
+            View Notebooks
+          </a>
+         
+        </div>
+      </div>
+
+    </article>
     
   </div>
 </section>
